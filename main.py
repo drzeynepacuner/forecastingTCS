@@ -105,7 +105,7 @@ def quickstart():
             return mp, forecast_sum, valsum
 
 
-        mape_arima, forecast_arima, valsum = eval_model(AutoARIMA(start_p=8, max_p=12, start_q=1))
+        mape_arima, forecast_arima, valsum = eval_model(AutoARIMA())
         mape_theta, forecast_theta, valsum = eval_model(Theta())
         mape_LR, forecast_LR, valsum = eval_model(LinearRegressionModel(lags=2))
 

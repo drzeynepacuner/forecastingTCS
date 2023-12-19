@@ -83,9 +83,9 @@ scaled_pred_nbeats = nbeats.predict(n=12, series=train_list)
 # Inverse transform.
 pred_nbeats = train_scaler.inverse_transform(scaled_pred_nbeats)
 
-plt.plot(train_list)
-plt.plot(val_list)
-pred_nbeats.plot()
+#plt.plot(train_list)
+#plt.plot(val_list)
+#plt.plot(pred_nbeats)
 
 plt.show()
 

@@ -20,7 +20,7 @@ class preprocessing():
             data.drop(data.head(1).index, inplace=True)
             #data.reset_index(drop=True, inplace=True)
         print('data average:', np.average(data.total_earned))
-        ''''
+        '''
         # Calculate the IQR
         Q1 = data.total_earned.quantile(0.15)
         Q3 = data.total_earned.quantile(0.9)
