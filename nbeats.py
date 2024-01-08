@@ -14,7 +14,12 @@ import random
 
 # Get data.
 data = pd.read_csv('bq-results-20231122-143519-1700663741796.csv')
-members = random.choices(data.member_token, k=10)
+members = random.choices(data.member_token, k=2)
+member_to_predict = random.choices(data.member_token, k=1)
+print(member_to_predict)
+
+print(data.member_token)
+print(member_to_predict)
 
 # Prep data.
 train_list = []
@@ -68,20 +73,48 @@ for sctr in scaled_train:
 
 # Train the model.
 nbeats = NBEATSModel(
-    input_chunk_length=1,
-    output_chunk_length=1,
+    input_chunk_length=6,
+    output_chunk_length=6,
     generic_architecture=True,
     random_state=42)
 
 nbeats.fit(
-    scaled_train,
+    scaled_train_nonan,
     epochs=50)
 
+for member in member_to_predict:
+    # Get member data.
+    data_of_member = data[data.member_token == member_to_predict]
+
+print(data_of_member)
+
+historical_sum, term = preprocessing.set_term(data_of_member)
+data_of_member.reset_index(inplace=True)
+srs = TimeSeries.from_dataframe(data_of_member, time_col='posted_date', value_cols=['total_earned'],
+                                   fill_missing_dates=True)
+srs_scaled= train_scaler.fit_transform(srs)
+
 # Predict.
-scaled_pred_nbeats = nbeats.predict(n=12, series=train_list)
+scaled_pred_nbeats = nbeats.predict(n=term, series= srs_scaled)
 
 # Inverse transform.
 pred_nbeats = train_scaler.inverse_transform(scaled_pred_nbeats)
+
+
+
+for ind in np.arange(0, len(pred_nbeats)):
+
+    pred_nbeats[ind].plot()
+    train_list[ind].plot()
+    val_list[ind].plot()
+
+
+plt.show()
+
+#for ts in pred_nbeats:
+#    ts.plot()
+#    plt.show()
+
 
 #plt.plot(train_list)
 #plt.plot(val_list)

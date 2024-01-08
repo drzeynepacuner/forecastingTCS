@@ -11,7 +11,7 @@ from darts.models import AutoARIMA, Theta, LinearRegressionModel, MovingAverageF
 
 def quickstart():
 
-    data = pd.read_csv('frvrfriday_total.csv', delimiter=';')
+    data = pd.read_csv('wakeelthomas_total.csv', delimiter=';')
 
     #data.reset_index(inplace=True)
     #data = data.groupby(['Sale Month']).sum()
@@ -23,9 +23,10 @@ def quickstart():
 
 # Outlier handling
 
-    data = preprocessing.outlier_handling(data)
+    #data = preprocessing.outlier_handling(data)
     data.total_earned = data.total_earned.rolling(2).mean()
-    history = TimeSeries.from_dataframe(data, time_col='posted_date', value_cols=['total_earned'], fill_missing_dates=True, freq=None)
+    print(data)
+    history = TimeSeries.from_dataframe(data, time_col='index', value_cols=['total_earned'], fill_missing_dates=True, freq=None)
 
 
 
@@ -41,7 +42,7 @@ def quickstart():
     series = fill_missing_values(history)
 
     # Override term.
-    term = 9
+    term = 36
 
 
 
@@ -80,7 +81,7 @@ def quickstart():
 
     from darts.models import AutoARIMA
     AutoARIMA = AutoARIMA(start_p=1, start_q=1,
-                           max_p=3, max_q=3, m=4,
+                           max_p=3, max_q=3, m=12,
                            start_P=0, seasonal=True,
                            d=1, D=1, trace=True,
                            error_action='ignore',
@@ -95,7 +96,7 @@ def quickstart():
     historical.plot(label='Historical')
     forecast_theta.plot(label='Theta')
     forecast_AutoARIMA.plot(label='AutoArima')
-    plt.xlabel('Quarter')
+    plt.xlabel('Month')
     plt.ylabel('Total earned')
     plt.interactive(False)
     plt.show()
