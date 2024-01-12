@@ -1,72 +1,119 @@
-,forecast_arima,forecast_theta
-0,"[[ 6281.59849474]
- [ 7429.48661204]
- [ 8246.77974308]
- [ 8301.22686619]
- [ 8380.82874664]
- [ 8813.72861883]
- [ 9752.58318906]
- [10773.26051787]
- [11314.044009  ]
- [12331.99458088]
- [13542.83904838]
- [13853.08603338]
- [14444.52079528]
- [16038.04092269]
- [17291.6173897 ]
- [17173.45433443]
- [16994.03648173]
- [17252.35057598]
- [18307.52287715]
- [20017.51465674]
- [21010.58253039]
- [23130.13161448]
- [26057.94371546]
- [27067.61789149]
- [29021.27762307]
- [33203.76059522]
- [36296.60931084]
- [36279.97483095]
- [36245.27848422]
- [37418.84264234]
- [40505.03633067]
- [44502.73060376]
- [46721.88170776]
- [51189.82290657]
- [56970.23850568]
- [58745.56811035]]","[[ 5835.83978918]
- [ 5994.89243632]
- [ 6158.2725617 ]
- [ 6326.09790666]
- [ 6498.48941599]
- [ 6675.57132514]
- [ 6857.47124974]
- [ 7044.32027756]
- [ 7236.25306298]
- [ 7433.40792405]
- [ 7635.92694214]
- [ 7843.95606435]
- [ 8057.64520869]
- [ 8277.14837211]
- [ 8502.62374149]
- [ 8734.23380762]
- [ 8972.14548232]
- [ 9216.53021871]
- [ 9467.56413481]
- [ 9725.42814039]
- [ 9990.30806741]
- [10262.3948039 ]
- [10541.88443154]
- [10828.97836699]
- [11123.883507  ]
- [11426.81237754]
- [11737.98328694]
- [12057.62048325]
- [12385.9543158 ]
- [12723.22140124]
- [13069.66479406]
- [13425.5341617 ]
- [13791.08596455]
- [14166.5836407 ]
- [14552.29779584]
- [14948.50639824]]"
+,0
+0,"['Granularity:', 'quarter', 'Historical sum:', 5034428, 'Historical length:', 40, 'Historical average:', 125861.0, 'Theta_sum:', 1453722.0, 'Theta average:', 161525.0]"
+1,"['Granularity:', 'quarter', 'Historical sum:', 1258297, 'Historical length:', 6, 'Historical average:', 209716.0, 'Theta_sum:', 2054018.0, 'Theta average:', 228224.0]"
+2,"['Granularity:', 'quarter', 'Historical sum:', 3376418, 'Historical length:', 5, 'Historical average:', 675284.0, 'Theta_sum:', 6048430.0, 'Theta average:', 672048.0]"
+3,"['Granularity:', 'quarter', 'Historical sum:', 751476, 'Historical length:', 7, 'Historical average:', 107354.0, 'Theta_sum:', 953440.0, 'Theta average:', 105938.0]"
+4,"['Granularity:', 'quarter', 'Historical sum:', 3772995, 'Historical length:', 9, 'Historical average:', 419222.0, 'Theta_sum:', 10170328.0, 'Theta average:', 1130036.0]"
+5,"['Granularity:', 'quarter', 'Historical sum:', 1958586, 'Historical length:', 6, 'Historical average:', 326431.0, 'Theta_sum:', 3021553.0, 'Theta average:', 335728.0]"
+6,"['Granularity:', 'quarter', 'Historical sum:', 3361780, 'Historical length:', 11, 'Historical average:', 305616.0, 'Theta_sum:', 2913004.0, 'Theta average:', 323667.0]"
+7,"['Granularity:', 'quarter', 'Historical sum:', 220599, 'Historical length:', 5, 'Historical average:', 44120.0, 'Theta_sum:', 397090.0, 'Theta average:', 44121.0]"
+8,"['Granularity:', 'quarter', 'Historical sum:', 7684209, 'Historical length:', 21, 'Historical average:', 365915.0, 'Theta_sum:', 2729309.0, 'Theta average:', 303257.0]"
+9,"['Granularity:', 'quarter', 'Historical sum:', 655891, 'Historical length:', 5, 'Historical average:', 131178.0, 'Theta_sum:', 1107888.0, 'Theta average:', 123099.0]"
+10,"['Granularity:', 'quarter', 'Historical sum:', 16805765, 'Historical length:', 22, 'Historical average:', 763898.0, 'Theta_sum:', 6292712.0, 'Theta average:', 699190.0]"
+11,"['Granularity:', 'quarter', 'Historical sum:', 7939601, 'Historical length:', 25, 'Historical average:', 317584.0, 'Theta_sum:', 2364791.0, 'Theta average:', 262755.0]"
+12,"['Granularity:', 'quarter', 'Historical sum:', 950715, 'Historical length:', 7, 'Historical average:', 135816.0, 'Theta_sum:', 1261814.0, 'Theta average:', 140202.0]"
+13,"['Granularity:', 'quarter', 'Historical sum:', 736900, 'Historical length:', 3, 'Historical average:', 245633.0, 'Theta_sum:', 2211857.0, 'Theta average:', 245762.0]"
+14,"['Granularity:', 'quarter', 'Historical sum:', 4897007, 'Historical length:', 24, 'Historical average:', 204042.0, 'Theta_sum:', 1780079.0, 'Theta average:', 197787.0]"
+15,"['Granularity:', 'quarter', 'Historical sum:', 781242, 'Historical length:', 10, 'Historical average:', 78124.0, 'Theta_sum:', 450053.0, 'Theta average:', 50006.0]"
+16,"['Granularity:', 'quarter', 'Historical sum:', 7517866, 'Historical length:', 19, 'Historical average:', 395677.0, 'Theta_sum:', 3548428.0, 'Theta average:', 394270.0]"
+17,"['Granularity:', 'quarter', 'Historical sum:', 314494, 'Historical length:', 6, 'Historical average:', 52416.0, 'Theta_sum:', 351449.0, 'Theta average:', 39050.0]"
+18,"['Granularity:', 'quarter', 'Historical sum:', 11198478, 'Historical length:', 8, 'Historical average:', 1399810.0, 'Theta_sum:', 2890555.0, 'Theta average:', 321173.0]"
+19,"['Granularity:', 'quarter', 'Historical sum:', 1368376, 'Historical length:', 4, 'Historical average:', 342094.0, 'Theta_sum:', 3676198.0, 'Theta average:', 408466.0]"
+20,"['Granularity:', 'quarter', 'Historical sum:', 2254521, 'Historical length:', 11, 'Historical average:', 204956.0, 'Theta_sum:', 4158533.0, 'Theta average:', 462059.0]"
+21,"['Granularity:', 'quarter', 'Historical sum:', 1520952, 'Historical length:', 8, 'Historical average:', 190119.0, 'Theta_sum:', 1575136.0, 'Theta average:', 175015.0]"
+22,"['Granularity:', 'quarter', 'Historical sum:', 15003385, 'Historical length:', 39, 'Historical average:', 384702.0, 'Theta_sum:', 3703900.0, 'Theta average:', 411544.0]"
+23,"['Granularity:', 'quarter', 'Historical sum:', 75087055, 'Historical length:', 41, 'Historical average:', 1831392.0, 'Theta_sum:', 22296217.0, 'Theta average:', 2477357.0]"
+24,"['Granularity:', 'quarter', 'Historical sum:', 8486562, 'Historical length:', 31, 'Historical average:', 273760.0, 'Theta_sum:', 2361432.0, 'Theta average:', 262381.0]"
+25,"['Granularity:', 'quarter', 'Historical sum:', 628346, 'Historical length:', 3, 'Historical average:', 209449.0, 'Theta_sum:', 1645919.0, 'Theta average:', 182880.0]"
+26,"['Granularity:', 'quarter', 'Historical sum:', 73232203, 'Historical length:', 22, 'Historical average:', 3328736.0, 'Theta_sum:', 25308725.0, 'Theta average:', 2812081.0]"
+27,"['Granularity:', 'quarter', 'Historical sum:', 38216838, 'Historical length:', 18, 'Historical average:', 2123158.0, 'Theta_sum:', 17532595.0, 'Theta average:', 1948066.0]"
+28,"['Granularity:', 'quarter', 'Historical sum:', 2137912, 'Historical length:', 11, 'Historical average:', 194356.0, 'Theta_sum:', 1699353.0, 'Theta average:', 188817.0]"
+29,"['Granularity:', 'quarter', 'Historical sum:', 2923225, 'Historical length:', 7, 'Historical average:', 417604.0, 'Theta_sum:', 3506229.0, 'Theta average:', 389581.0]"
+30,"['Granularity:', 'quarter', 'Historical sum:', 5027838, 'Historical length:', 25, 'Historical average:', 201114.0, 'Theta_sum:', 1855973.0, 'Theta average:', 206219.0]"
+31,"['Granularity:', 'quarter', 'Historical sum:', 1486289, 'Historical length:', 5, 'Historical average:', 297258.0, 'Theta_sum:', 2674675.0, 'Theta average:', 297186.0]"
+32,"['Granularity:', 'quarter', 'Historical sum:', 4126668, 'Historical length:', 9, 'Historical average:', 458519.0, 'Theta_sum:', 3472853.0, 'Theta average:', 385873.0]"
+33,"['Granularity:', 'quarter', 'Historical sum:', 934347, 'Historical length:', 5, 'Historical average:', 186869.0, 'Theta_sum:', 1787415.0, 'Theta average:', 198602.0]"
+34,"['Granularity:', 'quarter', 'Historical sum:', 13223544, 'Historical length:', 10, 'Historical average:', 1322354.0, 'Theta_sum:', 10022959.0, 'Theta average:', 1113662.0]"
+35,"['Granularity:', 'quarter', 'Historical sum:', 10175195, 'Historical length:', 22, 'Historical average:', 462509.0, 'Theta_sum:', 3797517.0, 'Theta average:', 421946.0]"
+36,"['Granularity:', 'quarter', 'Historical sum:', 982368, 'Historical length:', 12, 'Historical average:', 81864.0, 'Theta_sum:', 558371.0, 'Theta average:', 62041.0]"
+37,"['Granularity:', 'quarter', 'Historical sum:', 380494, 'Historical length:', 3, 'Historical average:', 126831.0, 'Theta_sum:', 975077.0, 'Theta average:', 108342.0]"
+38,"['Granularity:', 'quarter', 'Historical sum:', 24095046, 'Historical length:', 10, 'Historical average:', 2409505.0, 'Theta_sum:', 41919718.0, 'Theta average:', 4657746.0]"
+39,"['Granularity:', 'quarter', 'Historical sum:', 3968041, 'Historical length:', 22, 'Historical average:', 180366.0, 'Theta_sum:', 1576751.0, 'Theta average:', 175195.0]"
+40,"['Granularity:', 'quarter', 'Historical sum:', 905536, 'Historical length:', 4, 'Historical average:', 226384.0, 'Theta_sum:', 1575816.0, 'Theta average:', 175091.0]"
+41,"['Granularity:', 'quarter', 'Historical sum:', 4801659, 'Historical length:', 9, 'Historical average:', 533518.0, 'Theta_sum:', 3982713.0, 'Theta average:', 442524.0]"
+42,"['Granularity:', 'quarter', 'Historical sum:', 5587217, 'Historical length:', 31, 'Historical average:', 180233.0, 'Theta_sum:', 927374.0, 'Theta average:', 103042.0]"
+43,"['Granularity:', 'quarter', 'Historical sum:', 48446194, 'Historical length:', 21, 'Historical average:', 2306962.0, 'Theta_sum:', 22512868.0, 'Theta average:', 2501430.0]"
+44,"['Granularity:', 'quarter', 'Historical sum:', 443781, 'Historical length:', 6, 'Historical average:', 73964.0, 'Theta_sum:', 752311.0, 'Theta average:', 83590.0]"
+45,"['Granularity:', 'quarter', 'Historical sum:', 12766877, 'Historical length:', 36, 'Historical average:', 354635.0, 'Theta_sum:', 3303012.0, 'Theta average:', 367001.0]"
+46,"['Granularity:', 'quarter', 'Historical sum:', 7044091, 'Historical length:', 33, 'Historical average:', 213457.0, 'Theta_sum:', 1492238.0, 'Theta average:', 165804.0]"
+47,"['Granularity:', 'quarter', 'Historical sum:', 10042497, 'Historical length:', 18, 'Historical average:', 557916.0, 'Theta_sum:', 4557243.0, 'Theta average:', 506360.0]"
+48,"['Granularity:', 'quarter', 'Historical sum:', 4283417, 'Historical length:', 15, 'Historical average:', 285561.0, 'Theta_sum:', 2495000.0, 'Theta average:', 277222.0]"
+49,"['Granularity:', 'quarter', 'Historical sum:', 7421619, 'Historical length:', 6, 'Historical average:', 1236936.0, 'Theta_sum:', 12036387.0, 'Theta average:', 1337376.0]"
+50,"['Granularity:', 'quarter', 'Historical sum:', 1103125, 'Historical length:', 4, 'Historical average:', 275781.0, 'Theta_sum:', 2484588.0, 'Theta average:', 276065.0]"
+51,"['Granularity:', 'quarter', 'Historical sum:', 90108868, 'Historical length:', 26, 'Historical average:', 3465726.0, 'Theta_sum:', 29092113.0, 'Theta average:', 3232457.0]"
+52,"['Granularity:', 'quarter', 'Historical sum:', 12427045, 'Historical length:', 22, 'Historical average:', 564866.0, 'Theta_sum:', 6196961.0, 'Theta average:', 688551.0]"
+53,"['Granularity:', 'quarter', 'Historical sum:', 11504065, 'Historical length:', 31, 'Historical average:', 371099.0, 'Theta_sum:', 3135214.0, 'Theta average:', 348357.0]"
+54,"['Granularity:', 'quarter', 'Historical sum:', 5823394, 'Historical length:', 20, 'Historical average:', 291170.0, 'Theta_sum:', 1851502.0, 'Theta average:', 205722.0]"
+55,"['Granularity:', 'quarter', 'Historical sum:', 663087, 'Historical length:', 10, 'Historical average:', 66309.0, 'Theta_sum:', 207139.0, 'Theta average:', 23015.0]"
+56,"['Granularity:', 'quarter', 'Historical sum:', 14669979, 'Historical length:', 6, 'Historical average:', 2444996.0, 'Theta_sum:', 21352673.0, 'Theta average:', 2372519.0]"
+57,"['Granularity:', 'quarter', 'Historical sum:', 12079808, 'Historical length:', 5, 'Historical average:', 2415962.0, 'Theta_sum:', 116062523.0, 'Theta average:', 12895836.0]"
+58,"['Granularity:', 'quarter', 'Historical sum:', 54606508, 'Historical length:', 26, 'Historical average:', 2100250.0, 'Theta_sum:', 17812293.0, 'Theta average:', 1979144.0]"
+59,"['Granularity:', 'quarter', 'Historical sum:', 18190394, 'Historical length:', 36, 'Historical average:', 505289.0, 'Theta_sum:', 4242745.0, 'Theta average:', 471416.0]"
+60,"['Granularity:', 'quarter', 'Historical sum:', 349784, 'Historical length:', 7, 'Historical average:', 49969.0, 'Theta_sum:', 323657.0, 'Theta average:', 35962.0]"
+61,"['Granularity:', 'quarter', 'Historical sum:', 49526092, 'Historical length:', 26, 'Historical average:', 1904850.0, 'Theta_sum:', 15026294.0, 'Theta average:', 1669588.0]"
+62,"['Granularity:', 'quarter', 'Historical sum:', 1109409, 'Historical length:', 8, 'Historical average:', 138676.0, 'Theta_sum:', 1169515.0, 'Theta average:', 129946.0]"
+63,"['Granularity:', 'quarter', 'Historical sum:', 3064780, 'Historical length:', 24, 'Historical average:', 127699.0, 'Theta_sum:', 1215156.0, 'Theta average:', 135017.0]"
+64,"['Granularity:', 'quarter', 'Historical sum:', 30274771, 'Historical length:', 41, 'Historical average:', 738409.0, 'Theta_sum:', 6483795.0, 'Theta average:', 720422.0]"
+65,"['Granularity:', 'quarter', 'Historical sum:', 5322346, 'Historical length:', 24, 'Historical average:', 221764.0, 'Theta_sum:', 2087768.0, 'Theta average:', 231974.0]"
+66,"['Granularity:', 'quarter', 'Historical sum:', 22626227, 'Historical length:', 41, 'Historical average:', 551859.0, 'Theta_sum:', 6096602.0, 'Theta average:', 677400.0]"
+67,"['Granularity:', 'quarter', 'Historical sum:', 4264238, 'Historical length:', 10, 'Historical average:', 426424.0, 'Theta_sum:', 3516531.0, 'Theta average:', 390726.0]"
+68,"['Granularity:', 'quarter', 'Historical sum:', 2070810, 'Historical length:', 7, 'Historical average:', 295830.0, 'Theta_sum:', 2639745.0, 'Theta average:', 293305.0]"
+69,"['Granularity:', 'quarter', 'Historical sum:', 1348374, 'Historical length:', 4, 'Historical average:', 337094.0, 'Theta_sum:', 3020571.0, 'Theta average:', 335619.0]"
+70,"['Granularity:', 'quarter', 'Historical sum:', 3254936, 'Historical length:', 23, 'Historical average:', 141519.0, 'Theta_sum:', 1109747.0, 'Theta average:', 123305.0]"
+71,"['Granularity:', 'quarter', 'Historical sum:', 1816745, 'Historical length:', 10, 'Historical average:', 181674.0, 'Theta_sum:', 1439233.0, 'Theta average:', 159915.0]"
+72,"['Granularity:', 'quarter', 'Historical sum:', 2140303, 'Historical length:', 19, 'Historical average:', 112648.0, 'Theta_sum:', 944053.0, 'Theta average:', 104895.0]"
+73,"['Granularity:', 'quarter', 'Historical sum:', 4984103, 'Historical length:', 31, 'Historical average:', 160778.0, 'Theta_sum:', 1369858.0, 'Theta average:', 152206.0]"
+74,"['Granularity:', 'quarter', 'Historical sum:', 493149, 'Historical length:', 5, 'Historical average:', 98630.0, 'Theta_sum:', 896387.0, 'Theta average:', 99599.0]"
+75,"['Granularity:', 'quarter', 'Historical sum:', 1312186, 'Historical length:', 4, 'Historical average:', 328046.0, 'Theta_sum:', 2950968.0, 'Theta average:', 327885.0]"
+76,"['Granularity:', 'quarter', 'Historical sum:', 13696481, 'Historical length:', 22, 'Historical average:', 622567.0, 'Theta_sum:', 5533293.0, 'Theta average:', 614810.0]"
+77,"['Granularity:', 'quarter', 'Historical sum:', 2132143, 'Historical length:', 4, 'Historical average:', 533036.0, 'Theta_sum:', 4892173.0, 'Theta average:', 543575.0]"
+78,"['Granularity:', 'quarter', 'Historical sum:', 9028781, 'Historical length:', 24, 'Historical average:', 376199.0, 'Theta_sum:', 3363481.0, 'Theta average:', 373720.0]"
+79,"['Granularity:', 'quarter', 'Historical sum:', 26883372, 'Historical length:', 7, 'Historical average:', 3840482.0, 'Theta_sum:', 38026235.0, 'Theta average:', 4225137.0]"
+80,"['Granularity:', 'quarter', 'Historical sum:', 735989, 'Historical length:', 4, 'Historical average:', 183997.0, 'Theta_sum:', 1645172.0, 'Theta average:', 182797.0]"
+81,"['Granularity:', 'quarter', 'Historical sum:', 3947195, 'Historical length:', 30, 'Historical average:', 131573.0, 'Theta_sum:', 1593603.0, 'Theta average:', 177067.0]"
+82,"['Granularity:', 'quarter', 'Historical sum:', 28535508, 'Historical length:', 39, 'Historical average:', 731680.0, 'Theta_sum:', 6650078.0, 'Theta average:', 738898.0]"
+83,"['Granularity:', 'quarter', 'Historical sum:', 14864861, 'Historical length:', 41, 'Historical average:', 362558.0, 'Theta_sum:', 3344502.0, 'Theta average:', 371611.0]"
+84,"['Granularity:', 'quarter', 'Historical sum:', 6049137, 'Historical length:', 14, 'Historical average:', 432081.0, 'Theta_sum:', 3896596.0, 'Theta average:', 432955.0]"
+85,"['Granularity:', 'quarter', 'Historical sum:', 3066072, 'Historical length:', 6, 'Historical average:', 511012.0, 'Theta_sum:', 4133132.0, 'Theta average:', 459237.0]"
+86,"['Granularity:', 'quarter', 'Historical sum:', 22566972, 'Historical length:', 18, 'Historical average:', 1253721.0, 'Theta_sum:', 8687147.0, 'Theta average:', 965239.0]"
+87,"['Granularity:', 'quarter', 'Historical sum:', 40707508, 'Historical length:', 12, 'Historical average:', 3392292.0, 'Theta_sum:', 33777476.0, 'Theta average:', 3753053.0]"
+88,"['Granularity:', 'quarter', 'Historical sum:', 6351547, 'Historical length:', 5, 'Historical average:', 1270309.0, 'Theta_sum:', 11047021.0, 'Theta average:', 1227447.0]"
+89,"['Granularity:', 'quarter', 'Historical sum:', 5891879, 'Historical length:', 3, 'Historical average:', 1963960.0, 'Theta_sum:', 81260.0, 'Theta average:', 9029.0]"
+90,"['Granularity:', 'quarter', 'Historical sum:', 3749559, 'Historical length:', 4, 'Historical average:', 937390.0, 'Theta_sum:', 4028232.0, 'Theta average:', 447581.0]"
+91,"['Granularity:', 'quarter', 'Historical sum:', 715052, 'Historical length:', 10, 'Historical average:', 71505.0, 'Theta_sum:', 562608.0, 'Theta average:', 62512.0]"
+92,"['Granularity:', 'quarter', 'Historical sum:', 15392671, 'Historical length:', 28, 'Historical average:', 549738.0, 'Theta_sum:', 5800080.0, 'Theta average:', 644453.0]"
+93,"['Granularity:', 'quarter', 'Historical sum:', 96115531, 'Historical length:', 37, 'Historical average:', 2597717.0, 'Theta_sum:', 15389352.0, 'Theta average:', 1709928.0]"
+94,"['Granularity:', 'quarter', 'Historical sum:', 318601, 'Historical length:', 6, 'Historical average:', 53100.0, 'Theta_sum:', 76539.0, 'Theta average:', 8504.0]"
+95,"['Granularity:', 'quarter', 'Historical sum:', 2164379, 'Historical length:', 4, 'Historical average:', 541095.0, 'Theta_sum:', 21844012.0, 'Theta average:', 2427112.0]"
+96,"['Granularity:', 'quarter', 'Historical sum:', 2325467, 'Historical length:', 4, 'Historical average:', 581367.0, 'Theta_sum:', 5256595.0, 'Theta average:', 584066.0]"
+97,"['Granularity:', 'quarter', 'Historical sum:', 9063481, 'Historical length:', 29, 'Historical average:', 312534.0, 'Theta_sum:', 2238913.0, 'Theta average:', 248768.0]"
+98,"['Granularity:', 'quarter', 'Historical sum:', 9784858, 'Historical length:', 36, 'Historical average:', 271802.0, 'Theta_sum:', 2494873.0, 'Theta average:', 277208.0]"
+99,"['Granularity:', 'quarter', 'Historical sum:', 15054698, 'Historical length:', 21, 'Historical average:', 716890.0, 'Theta_sum:', 6522124.0, 'Theta average:', 724680.0]"
+100,"['Granularity:', 'quarter', 'Historical sum:', 29975643, 'Historical length:', 24, 'Historical average:', 1248985.0, 'Theta_sum:', 9277632.0, 'Theta average:', 1030848.0]"
+101,"['Granularity:', 'quarter', 'Historical sum:', 47604282, 'Historical length:', 4, 'Historical average:', 11901070.0, 'Theta_sum:', 114663301.0, 'Theta average:', 12740367.0]"
+102,"['Granularity:', 'quarter', 'Historical sum:', 9328197, 'Historical length:', 23, 'Historical average:', 405574.0, 'Theta_sum:', 3553959.0, 'Theta average:', 394884.0]"
+103,"['Granularity:', 'quarter', 'Historical sum:', 1845807, 'Historical length:', 29, 'Historical average:', 63649.0, 'Theta_sum:', 1104497.0, 'Theta average:', 122722.0]"
+104,"['Granularity:', 'quarter', 'Historical sum:', 7776109, 'Historical length:', 7, 'Historical average:', 1110873.0, 'Theta_sum:', 7755041.0, 'Theta average:', 861671.0]"
+105,"['Granularity:', 'quarter', 'Historical sum:', 2125711, 'Historical length:', 15, 'Historical average:', 141714.0, 'Theta_sum:', 508908.0, 'Theta average:', 56545.0]"
+106,"['Granularity:', 'quarter', 'Historical sum:', 18059215, 'Historical length:', 37, 'Historical average:', 488087.0, 'Theta_sum:', 5817983.0, 'Theta average:', 646443.0]"
+107,"['Granularity:', 'quarter', 'Historical sum:', 2265252, 'Historical length:', 9, 'Historical average:', 251695.0, 'Theta_sum:', 3759365.0, 'Theta average:', 417707.0]"
+108,"['Granularity:', 'quarter', 'Historical sum:', 5440989, 'Historical length:', 13, 'Historical average:', 418538.0, 'Theta_sum:', 3846506.0, 'Theta average:', 427390.0]"
+109,"['Granularity:', 'quarter', 'Historical sum:', 20137954, 'Historical length:', 18, 'Historical average:', 1118775.0, 'Theta_sum:', 9576867.0, 'Theta average:', 1064096.0]"
+110,"['Granularity:', 'quarter', 'Historical sum:', 782540, 'Historical length:', 20, 'Historical average:', 39127.0, 'Theta_sum:', 345272.0, 'Theta average:', 38364.0]"
+111,"['Granularity:', 'quarter', 'Historical sum:', 7319538, 'Historical length:', 13, 'Historical average:', 563041.0, 'Theta_sum:', 5272166.0, 'Theta average:', 585796.0]"
+112,"['Granularity:', 'quarter', 'Historical sum:', 629845, 'Historical length:', 8, 'Historical average:', 78731.0, 'Theta_sum:', 1017690.0, 'Theta average:', 113077.0]"
+113,"['Granularity:', 'quarter', 'Historical sum:', 1141197, 'Historical length:', 4, 'Historical average:', 285299.0, 'Theta_sum:', 3603727.0, 'Theta average:', 400414.0]"
+114,"['Granularity:', 'quarter', 'Historical sum:', 5928297, 'Historical length:', 40, 'Historical average:', 148207.0, 'Theta_sum:', 1228695.0, 'Theta average:', 136522.0]"
+115,"['Granularity:', 'quarter', 'Historical sum:', 5772913, 'Historical length:', 11, 'Historical average:', 524810.0, 'Theta_sum:', 4825064.0, 'Theta average:', 536118.0]"
+116,"['Granularity:', 'quarter', 'Historical sum:', 4775071, 'Historical length:', 7, 'Historical average:', 682153.0, 'Theta_sum:', 8372013.0, 'Theta average:', 930224.0]"
+117,"['Granularity:', 'quarter', 'Historical sum:', 4944402, 'Historical length:', 25, 'Historical average:', 197776.0, 'Theta_sum:', 1751057.0, 'Theta average:', 194562.0]"

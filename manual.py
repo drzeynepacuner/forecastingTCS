@@ -6,12 +6,14 @@ import matplotlib.pyplot as plt
 from darts.utils.missing_values import fill_missing_values
 from darts import TimeSeries
 from darts.metrics import mape, mase, smape
-from darts.models import AutoARIMA, Theta, LinearRegressionModel, MovingAverageFilter
+from darts.models import AutoARIMA, Theta, LinearRegressionModel, MovingAverageFilter,ExponentialSmoothing
+from darts.utils.utils import ModelMode, SeasonalityMode
 
 
 def quickstart():
 
-    data = pd.read_csv('wakeelthomas_total.csv', delimiter=';')
+
+    data = pd.read_csv('lisadawnmiller_total.csv', delimiter=';')
 
     #data.reset_index(inplace=True)
     #data = data.groupby(['Sale Month']).sum()
@@ -23,10 +25,13 @@ def quickstart():
 
 # Outlier handling
 
-    #data = preprocessing.outlier_handling(data)
-    data.total_earned = data.total_earned.rolling(2).mean()
+    data = preprocessing.outlier_handling(data)
+    # rolling average
+    # round(len(data)/4)
+    data.total_earned = data.total_earned.rolling(round(len(data)/4)).mean()
+
     print(data)
-    history = TimeSeries.from_dataframe(data, time_col='index', value_cols=['total_earned'], fill_missing_dates=True, freq=None)
+    history = TimeSeries.from_dataframe(data, time_col='posted_date', value_cols=['total_earned'], fill_missing_dates=True, freq=None)
 
 
 
@@ -42,9 +47,7 @@ def quickstart():
     series = fill_missing_values(history)
 
     # Override term.
-    term = 36
-
-
+    term = 9
 
     train, val = series.split_after(0.75)
 
@@ -78,10 +81,11 @@ def quickstart():
     theta.fit(series)
     forecast_theta = theta.predict(term)
     forecast_theta = forecast_theta.map(np.exp) -10
+    #smoothed = smoothed.map(np.exp) -10
 
     from darts.models import AutoARIMA
     AutoARIMA = AutoARIMA(start_p=1, start_q=1,
-                           max_p=3, max_q=3, m=12,
+                           max_p=3, max_q=3, m=4,
                            start_P=0, seasonal=True,
                            d=1, D=1, trace=True,
                            error_action='ignore',
@@ -96,7 +100,8 @@ def quickstart():
     historical.plot(label='Historical')
     forecast_theta.plot(label='Theta')
     forecast_AutoARIMA.plot(label='AutoArima')
-    plt.xlabel('Month')
+    #smoothed.plot(label='smoothed')
+    plt.xlabel('Quarter')
     plt.ylabel('Total earned')
     plt.interactive(False)
     plt.show()
@@ -106,6 +111,8 @@ def quickstart():
     forecast_AutoARIMA = TimeSeries.pd_dataframe(forecast_AutoARIMA)
     forecast_sum_AutoARIMA = sum(forecast_AutoARIMA.total_earned)
     historical = TimeSeries.pd_dataframe(historical)
+
+    #smoothed = TimeSeries.pd_dataframe(smoothed)
 
 
     print('Term:', 36, 'Historical sum:', np.round(historical_sum), 'Historical length:', len(historical),
@@ -127,7 +134,6 @@ def quickstart():
     results.columns = ['forecast_arima','forecast_theta']
 
     return results.to_csv('results.csv')
-
 
 
 
